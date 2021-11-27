@@ -28,3 +28,37 @@ ul {
     color: var(--clr-white);
     background: var(--clr-black);
   }
+  .section {
+    padding: 5rem 0;
+  }
+  
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      width: 95vw;
+    }
+  }
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .hero {
+    min-height: 100vh;
+    background: url("./hero.jpeg") center/cover no-repeat;
+    display: grid;
+    place-items: center;
+  }
+  .banner {
+    background: var(--clr-white);
+    padding: 4rem 0;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    text-align: center;
+    width: 90vw;
+    max-width: var(--fixed-width);
+  }
