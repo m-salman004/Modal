@@ -85,4 +85,33 @@ ul {
     visibility: hidden;
     z-index: -10;
   }
-  
+  .open-modal {
+    visibility: visible;
+    z-index: 10;
+  }
+  .modal-container {
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    width: 90vw;
+    height: 30vh;
+    max-width: var(--fixed-width);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-red-dark);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .close-btn:hover {
+    color: var(--clr-red-light);
+    transform: scale(1.3);
+  }
